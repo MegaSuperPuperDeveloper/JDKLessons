@@ -196,16 +196,16 @@ public class Map extends JPanel {
                 char firstElement2 = field[0][i];
                 char firstElement3 = field[0][0];
                 char firstElement4 = field[0][fieldSizeX-1];
-                if (field[i][j] == firstElement1 && firstElement1 != EMPTY_DOT) {
+                if (field[i][j] == firstElement1 && firstElement1 != EMPTY_DOT) { // Проверка горизонтальных линий
                     counterX++;
                 }
-                if (field[j][i] == firstElement2 && firstElement2 != EMPTY_DOT) {
+                if (field[j][i] == firstElement2 && firstElement2 != EMPTY_DOT) { // Проверка вертикальных линий
                     counterY++;
                 }
-                if (field[j][j] == firstElement3 && firstElement3 != EMPTY_DOT) {
+                if (field[j][j] == firstElement3 && firstElement3 != EMPTY_DOT) { // Проверка диагонали слева направо
                     counterDiagonal1++;
                 }
-                if (field[i][j] == firstElement4 && i + j == 2 && firstElement4 != EMPTY_DOT) {
+                if (field[i][j] == firstElement4 && i + j == 2 && firstElement4 != EMPTY_DOT) { // Проверка диагонали справа налево
                     counterDiagonal2++;
                 }
             }
